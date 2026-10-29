@@ -110,19 +110,22 @@ body {
 
 .avatar-badge {
   position: relative;
-  width: 78px;
-  height: 78px;
+  width: 88px;
+  height: 88px;
   background: #FFFFFF;
   border-radius: var(--radius-full);
-  padding: 4px;
+  padding: 6px;
   box-shadow: var(--shadow-md);
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ucb-seal-icon {
+.ucb-seal-img {
   width: 100%;
   height: 100%;
-  border-radius: var(--radius-full);
+  object-fit: contain;
   display: block;
 }
 
@@ -553,15 +556,22 @@ body {
 }
 
 .footer-inst {
-  font-size: 0.80rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--ucb-blue-dark);
+}
+
+.footer-dept {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--ucb-blue);
+  margin-top: 3px;
 }
 
 .footer-rights {
   font-size: 0.70rem;
   color: var(--text-light);
-  margin-top: 2px;
+  margin-top: 3px;
   letter-spacing: 0.04em;
 }
 
