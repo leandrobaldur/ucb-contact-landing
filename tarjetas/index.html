@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Opciones de Tarjetas UCB – Paola Zapata</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body {
+      background: #061826;
+      color: #f1f5f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; color: #fecc00; text-align: center; }
+    p.subtitle { color: #94a3b8; font-size: 15px; margin-bottom: 35px; text-align: center; }
+    
+    .section-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fecc00;
+      margin: 35px 0 15px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .section-title::before, .section-title::after {
+      content: "";
+      height: 1px;
+      width: 45px;
+      background: #fecc00;
+    }
+    
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 35px;
+      justify-content: center;
+      max-width: 1250px;
+      margin-bottom: 25px;
+    }
+    .card-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(254, 204, 0, 0.15);
+      color: #fecc00;
+      padding: 6px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(254, 204, 0, 0.35);
+    }
+    
+    /* Horizontal card box */
+    .card-box-h {
+      width: 480px;
+      height: 303px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(254, 204, 0, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+    }
+    .card-box-h:hover {
+      transform: translateY(-6px) scale(1.015);
+      box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.9), 0 0 0 2px #fecc00;
+    }
+    .card-box-h img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Vertical card box (New Style) */
+    .card-box-v {
+      width: 320px;
+      height: 507px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(254, 204, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+    }
+    .card-box-v:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 35px 65px -15px rgba(0, 0, 0, 0.95), 0 0 0 2px #fecc00;
+    }
+    .card-box-v img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .action-panel {
+      background: #09263b;
+      border: 1px solid #134568;
+      border-radius: 14px;
+      padding: 25px 30px;
+      max-width: 850px;
+      width: 100%;
+      margin-top: 30px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    }
+    .btn-row {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+    }
+    .btn-gold {
+      background: #fecc00;
+      color: #022438;
+    }
+    .btn-gold:hover { background: #ffe066; transform: translateY(-1px); }
+    .btn-outline {
+      background: rgba(255,255,255,0.06);
+      color: #fff;
+      border: 1px solid rgba(254, 204, 0, 0.4);
+    }
+    .btn-outline:hover { background: rgba(254, 204, 0, 0.15); border-color: #fecc00; }
+  </style>
+</head>
+<body>
+  <h1>Universidad Católica Boliviana "San Pablo"</h1>
+  <p class="subtitle">Propuestas de Tarjetas Institucionales – Paola Zapata (Internacionalización)</p>
+
+  <!-- NUEVA OPCIÓN 3 -->
+  <div class="section-title">✨ NUEVA OPCIÓN: ESTILO SMART NFC VERTICAL (Inspiración Solicitada)</div>
+  <div class="card-grid">
+    <div class="card-wrap">
+      <span class="badge">Anverso Vertical (Frente)</span>
+      <div class="card-box-v">
+        <img src="tarjeta_vertical_frente.png" alt="Frente Vertical Smart NFC">
+      </div>
+    </div>
+    <div class="card-wrap">
+      <span class="badge">Reverso Vertical (Dorsal con QR)</span>
+      <div class="card-box-v">
+        <img src="tarjeta_vertical_reverso.png" alt="Reverso Vertical con QR">
+      </div>
+    </div>
+  </div>
+
+  <!-- OPCIÓN 2 HORIZONTAL PREVIA -->
+  <div class="section-title">OPCIÓN HORIZONTAL: EDITORIAL BLANCO & ORO (Previa)</div>
+  <div class="card-grid">
+    <div class="card-wrap">
+      <span class="badge">Frente Horizontal</span>
+      <div class="card-box-h">
+        <img src="tarjeta_frente_opcion2.png" alt="Frente Blanco Opción 2">
+      </div>
+    </div>
+    <div class="card-wrap">
+      <span class="badge">Reverso Blanco HD</span>
+      <div class="card-box-h">
+        <img src="tarjeta_reverso_blanco_hd.png" alt="Reverso Blanco HD">
+      </div>
+    </div>
+  </div>
+
+  <div class="action-panel">
+    <h3 style="color:#fecc00; margin-bottom: 10px;">📱 Características del Nuevo Diseño Vertical Smart:</h3>
+    <ul style="margin-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 14px;">
+      <li><strong>Formato Vertical (54 mm × 85.5 mm):</strong> Estilo moderno tipo credencial / Smart NFC Card.</li>
+      <li><strong>Ícono Contactless / NFC:</strong> En la esquina superior derecha del frente para indicar conectividad tap.</li>
+      <li><strong>Marca de Agua Sutil:</strong> Sello oficial UCB integrado como marca de agua en tono suave en el frente y reverso.</li>
+      <li><strong>QR Central de Alto Impacto:</strong> En el reverso, dentro de un contenedor blanco redondeado, con el enlace permanente a <code>https://ucb-contact-landing.vercel.app/</code>.</li>
+      <li><strong>Bloque de Color Inferior:</strong> Franja azul petróleo y oro en la base frontal, fiel a la referencia visual compartida.</li>
+    </ul>
+
+    <div class="btn-row">
+      <a class="btn btn-gold" href="tarjeta_vertical_frente.png" download>⬇️ Descargar Frente Vertical (PNG)</a>
+      <a class="btn btn-gold" href="tarjeta_vertical_reverso.png" download>⬇️ Descargar Reverso Vertical (PNG)</a>
+      <button class="btn btn-outline" onclick="window.print()">🖨️ Imprimir / Guardar en PDF</button>
+    </div>
+  </div>
+</body>
+</html>
